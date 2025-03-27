@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Slovenské Vzdelávacie Centrum Manchester</title>
+    <title>Slovak Charity - Payment</title>
     <style>
         body {
             font-family: Verdana, sans-serif;
@@ -36,22 +36,48 @@
         }
         .container {
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
             align-items: center;
             padding: 30px;
+            text-align: center;
         }
-        .text-content {
-            max-width: 500px;
+        .form-container {
+            max-width: 600px;
             background: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label, input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #A61E1E;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background: #822222;
         }
         .image img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
             box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
         }
         footer {
             background: #A61E1E;
@@ -66,7 +92,7 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Slovenské Vzdelávacie Centrum Manchester</h1>
+        <h1>Slovak Charity - Payment</h1>
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -77,13 +103,18 @@
         <a href="events.html">Events & Projects</a>
     </nav>
     <div class="container">
-        <div class="text-content">
-            <h2>Slovenské Vzdelávacie Centrum Manchester</h2>
-            <p>Slovenské Vzdelávacie Centrum – South Manchester is a registered charity dedicated to preserving and promoting Slovak language and culture. We provide Slovak language education and organize cultural and community activities to help Slovak-speaking families maintain their heritage while living abroad.
-While our primary focus is on supporting Slovak-speaking children and families, we warmly welcome anyone interested in learning the Slovak language and engaging with our traditions. Beyond our Saturday school, we offer various workshops, events, and social activities where individuals of all ages can connect, learn, and take part in our cultural community.</p>
+        <div class="form-container">
+            <h2>Payment Information</h2>
+            <p>To make a payment, please use one of the following options:</p>
+            <ul>
+                <li>Bank Transfer: <strong>Account Number: 12345678 | Sort Code: 00-00-00</strong></li>
+                <li>Online Payment: <a href="#">Click Here</a> to pay securely online.</li>
+                <li>In-Person Payment: Visit our office during opening hours.</li>
+            </ul>
+            <p>If you need further assistance, please contact us at <a href="#">your-email@example.com</a>.</p>
         </div>
         <div class="image">
-            <img src="https://th.bing.com/th/id/OIP.NtdGWERFC_J_DbW_gSJiTAHaE7?w=220&h=180&c=7&r=0&o=5&pid=1.7" alt="Community Gathering">
+            <img src="https://th.bing.com/th/id/OIP.NtdGWERFC_J_DbW_gSJiTAHaE7?w=220&h=180&c=7&r=0&o=5&pid=1.7" alt="Helping Hands">
         </div>
     </div>
     <footer>
